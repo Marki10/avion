@@ -1,4 +1,41 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 132px;
+}
+.header-top {
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+
+  &__search {
+    flex: 1;
+    text-align: left;
+  }
+  &__logo {
+    flex: 5;
+    text-align: center;
+  }
+  &__profile {
+    flex: 1;
+    text-align: right;
+  }
+}
+
 .main-menu {
+  height: 66px;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid gray;
+  margin: 0 28px;
+
   &__item {
+    padding: 0 22px;
+    text-wrap: nowrap;
   }
 }
